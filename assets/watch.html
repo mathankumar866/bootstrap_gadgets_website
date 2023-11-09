@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./watch.css">
+    </head>
+    <body>
+        <!--Start of Header-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand logo ms-5" href="#"><h3>Shop <span
+                            class="text-danger">Now</span></h3></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active menus" aria-current="page"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menus" aria-current="page"
+                                href="../assets/watch.html">Watches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menus" aria-current="page"
+                                href="../assets/headset.html">HeadPhones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menus"
+                                href="../assets/refurbished.html">Refurbished</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menus"
+                                href="../assets/about.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="menulist d-flex me-5 log">
+                        <h6>Cart<span
+                                class="position-absolute top-1 translate-middle badge rounded-pill bg-warning">
+                                0
+                                <span class="visually-hidden">Cart Items</span>
+                            </span></h6>
+                        <ion-icon class="ms-2" name="cart-outline"></ion-icon>
+                        <a href="/assets/order.html"><h6>Login</h6></a>
+                        <ion-icon class="ms-2" name="person-outline"></ion-icon>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary me-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Sign IN
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5"
+                                        id="staticBackdropLabel">Sign In
+                                        to
+                                        Shop Now</h1>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1"
+                                            class="form-label">Email
+                                            address</label>
+                                        <input type="email" class="form-control"
+                                            id="exampleFormControlInput1"
+                                            placeholder="name@example.com">
+                                    </div>
+                                    <label for="inputPassword5"
+                                        class="form-label">Password</label>
+                                    <input type="password" id="inputPassword5"
+                                        class="form-control"
+                                        aria-describedby="passwordHelpBlock">
+                                    <div id="passwordHelpBlock"
+                                        class="form-text">
+                                        Your password must be 8-20 characters
+                                        long, contain letters
+                                        and
+                                        numbers, and must not contain spaces,
+                                        special characters, or
+                                        emoji.
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="checkbox" value
+                                            id="invalidCheck" required>
+                                        <label class="form-check-label"
+                                            for="invalidCheck">
+                                            Agree to terms and conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button"
+                                        class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                </div>
+            </div>
+        </nav>
+        <!--End of Header-->
+
+        <!--Start of Banner-->
+        <div class="banner">
+            <button type="button" class="btn btn-light btn1">Shop Now</button>
+        </div>
+        <!--End of Banner-->
+        <!--Start of Products-->
+
+        <div class="section mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/WatchPage/Simple-Product-Watch-1.png"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Boom Headset</h5>
+                            <p class="card-text">This is a wider card with
+                                supporting text
+                                below as a natural lead-in to additional
+                                content. This content
+                                is a little bit longer.</p>
+                            <p class="card-text"><small
+                                    class="text-body-secondary">Last
+                                    updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/WatchPage/Simple-Product-Watch-2.png"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">boAt Air Buds 2.3</h5>
+                            <p class="card-text">This is a wider card with
+                                supporting text
+                                below as a natural lead-in to additional
+                                content. This content
+                                is a little bit longer.</p>
+                            <p class="card-text"><small
+                                    class="text-body-secondary">Last
+                                    updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/WatchPage/Simple-Product-Watch-3.png"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">FireBolt Series 3</h5>
+                            <p class="card-text">This is a wider card with
+                                supporting text
+                                below as a natural lead-in to additional
+                                content. This content
+                                is a little bit longer.</p>
+                            <p class="card-text"><small
+                                    class="text-body-secondary">Last
+                                    updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/WatchPage/Simple-Product-Watch-4.png"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">boAt Headset 2.0</h5>
+                            <p class="card-text">This is a wider card with
+                                supporting text
+                                below as a natural lead-in to additional
+                                content. This content
+                                is a little bit longer.</p>
+                            <p class="card-text"><small
+                                    class="text-body-secondary">Last
+                                    updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/WatchPage/Simple-Product-Watch-5.png"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">boAt Headset 2.0</h5>
+                            <p class="card-text">This is a wider card with
+                                supporting text
+                                below as a natural lead-in to additional
+                                content. This content
+                                is a little bit longer.</p>
+                            <p class="card-text"><small
+                                    class="text-body-secondary">Last
+                                    updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/WatchPage/Simple-Product-Watch-6.png"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">FireBolt Series 3</h5>
+                            <p class="card-text">This is a wider card with
+                                supporting text
+                                below as a natural lead-in to additional
+                                content. This content
+                                is a little bit longer.</p>
+                            <p class="card-text"><small
+                                    class="text-body-secondary">Last
+                                    updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Products-->
+
+
+        <!--Start of Cards-->
+        <div class="cardsection  mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-1.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $149</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-2.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $129</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-3.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $169</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardsection  mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-4.png"
+                    class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $169</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-5.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $299</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-6.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $259</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardsection  mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-7.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $149</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-8.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $129</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-1.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $169</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardsection  mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-2.png"
+                    class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $169</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-3.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $129</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-4.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $129</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardsection  mt-5 d-flex justify-content-around flex-wrap">
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-5.png"
+                    class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $169</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-6.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $129</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Images/WatchPage/Simple-Product-Watch-7.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card
+                        title and make up the bulk of the card's content.</p>
+                    <div
+                        class="card-footer text-body-secondary mt-2 d-flex  justify-content-between">
+                        <div>Price: $129</div>
+                        <div><ion-icon class="fs-3" name="cart"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-5">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+        <!--End of Cards-->
+
+        <!--Start of Carousol-->
+        <div class="banner3 mt-5 w-50 mx-auto">
+            <div id="carouselExampleInterval" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="/Images/Headset/Blog-Jim-Fahad-Digital-1.webp"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/Images/Headset/Blog-Jim-Fahad-Digital-2.webp"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/Images/Headset/Blog-Jim-Fahad-Digital-3.webp"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/Images/Headset/Blog-Jim-Fahad-Digital-4.webp"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/Images/Headset/Blog-Jim-Fahad-Digital-5.webp"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--End of Carousol-->
+
+        <!--Start of newsletter-->
+    <div
+    class="newsletter d-flex justify-content-around   flex-wrap mt-5 bg-dark text-white py-4">
+    <div>
+      <h3>Join Our <span class="text-danger">NewsLetter</span></h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+        voluptatibus consectetur</p>
+    </div>
+    <div class="input-group mb-3 w-50 news">
+      <input type="text" class="form-control" placeholder="Your Email Address"
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn bg-warning" type="button" id="button-addon2">Signup</button>
+    </div>
+  </div>
+  <!--End of newsletter-->
+
+        <!--Start Footer-->
+        <footer
+            class=" justify-content-around pt-5 foot">
+            <div class="footer1">
+                <h1 class="text-center pb-2">Shop Now - Store</h1>
+                <p>Lorem ipsum dolor sit amet consectetur elit amet<br>adipisicing
+                    elit. Obcaecatelit omnis </p>
+                <div class="social">
+                    <ion-icon data-aos="zoom-in" name="logo-facebook"></ion-icon>
+                    <ion-icon data-aos="zoom-in" name="logo-whatsapp"></ion-icon>
+                    <ion-icon data-aos="zoom-in" name="logo-instagram"></ion-icon>
+                    <ion-icon data-aos="zoom-in" name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+
+            <div class="footer1">
+                <h3 class="mt-3 pb-2">Services </h3>
+                <p>Stores</p>
+                <p>Products</p>
+                <p>Payment</p>
+                <p>EMI Option</p>
+            </div>
+
+            <div class="footer1">
+                <h3 class="mt-3  pb-2">Products</h3>
+                <p>Orders</p>
+                <p>Track Now</p>
+                <p>Delivery</p>
+                <p>Refund</p>
+            </div>
+            <div class="footer1">
+                <h3 class="mt-3  pb-2">Delivery</h3>
+                <p>Watches</p>
+                <p>Headset</p>
+                <p>Drone's</p>
+                <p>Gadgets</p>
+            </div>
+        </footer>
+        <div class="d-flex justify-content-between mx-5 mt-2 flex-wrap">
+            <div>
+                <p>Copyright&#169; | All Rights Reserved</p>
+            </div>
+            <div>
+                <p>Designed by Mathan using Bootstrap</p>
+            </div>
+        </div>
+        <!--End Footer
+    <a href="#" class="arrow"><i><img src="/Images/arrow.png" alt></i></a>-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menus:hover {
+    background-color: rgb(93, 225, 219);
+    border-radius: 10px;
+}
+
+.menus {
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-right: 5px;
+}
+
+.menulist ion-icon {
+    font-size: 25px;
+    margin-right: 35px;
+    margin-top: -3px;
+}
+
+.log a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo h3 {
+    font-weight: 900;
+}
+
+.banner {
+    background: url(/Images/About/about.jpg)no-repeat;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h1 {
+    font-weight: 900;
+    font-size: 80px;
+    padding-top: 200px;
+}
+
+.card ion-icon {
+    cursor: pointer;
+}
+
+.banner p {
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.btn1:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+}
+
+/* About Start */
+.about {
+    padding-top: 30px;
+    margin-top: 50px;
+    background: #ffffff;
+}
+
+.about .card {
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-weight: 500;
+}
+
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ff0000;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    width: 170px;
+}
+
+.vid {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.history {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.history-bg {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section img:hover {
+    transform: scale(1.5);
+}
+
+.banner3 img {
+    height: 380px;
+}
+
+.news input,
+.news button {
+    margin: 10px 0px;
+}
+
+.badge {
+    margin-left: 36px;
+}
+
+.para p {
+    margin-top: 100px;
+}
+
+.leader img {
+    border-radius: 20% 20% 15% 30%;
+    margin-bottom: 5px;
+}
+
+.abtimg img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.partners {
+    background-color: antiquewhite;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+/* Start Footer */
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.footer1 h1 {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+footer h3 {
+    color: #ff0000;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.foot {
+    background-color: rgb(93, 225, 219);
+}
+
+footer p {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+
+@media screen and (max-width:600px){
+    .section img:hover {
+        transform: scale(1);
+    }
+    .banner h1 {
+        padding-top: 50px;
+    }
+
+    .banner3 img {
+        height: 200px;
+        object-fit: contain;
+    }
+    .twitchbanner {
+        display: none;
+    }
+    .banner p {
+        font-size: 18px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:960px){
+     
+
+    .banner {
+        background: url(/Images/About/about.jpg)no-repeat;
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+    }
+}
